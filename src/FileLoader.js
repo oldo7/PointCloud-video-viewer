@@ -998,7 +998,7 @@ const FileLoader = () => {
                 <div className="right-column" id="right-column">
 
                     <div className="panel-caption">
-                        <h1> Point Cloud video viewer <a href="https://github.com/" target="_blank"> <span className="info-icon-large"> <i class="fa-solid fa-circle-info"></i> </span> </a> </h1>
+                        <h1> Point Cloud video viewer <a href="https://github.com/oldo7/PointCloud-video-viewer" target="_blank"> <span className="info-icon-large"> <i class="fa-solid fa-circle-info"></i> </span> </a> </h1>
                     </div>
 
                     <div className="mode-select-controls">
@@ -1368,7 +1368,7 @@ const FileLoader = () => {
                 </div>
                 <div className="upload-row5">
                     <div className="upload-file-format">
-                        <span> <a href="https://github.com/" target="_blank">File format specification</a></span>
+                        <span> <a href="https://github.com/oldo7/PointCloud-video-viewer" target="_blank">File format specification</a></span>
                         <span> {uploadScreenMessage} </span>
                     </div>
                     <div className="upload-cancel-button">
