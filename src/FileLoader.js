@@ -27,7 +27,7 @@ const FileLoader = () => {
     const [PCDfile,setPCDFile] = useState(null);
     const [rotFile, setRotFile] = useState(null);
     const [transFile, setTransFile] = useState(null);
-    const [videoFileString, setVideoFileString] = useState('https://ondrejklima.cloud/xnemce08/cam_25FPS264.mp4');
+    const [videoFileString, setVideoFileString] = useState('https://nextcloud.fit.vutbr.cz/public.php/dav/files/QtkZcAqaWnz7Lrz/');
     const [rotationOrderString, setRotationOrderString] = useState('YZX');
 
     //premenne pre UI prvky
@@ -190,7 +190,7 @@ const FileLoader = () => {
 
     //chyba pri spracovani zadaneho videa
     function videoErrorCallback(){
-        setVideoFileString('https://ondrejklima.cloud/xnemce08/cam_25FPS264.mp4');
+        setVideoFileString('https://nextcloud.fit.vutbr.cz/public.php/dav/files/QtkZcAqaWnz7Lrz/');
         setErrorStatus(true);
         setErrorMessage("Invalid video URL");
         setTimeout(() => {
@@ -1368,7 +1368,7 @@ const FileLoader = () => {
                 </div>
                 <div className="upload-row5">
                     <div className="upload-file-format">
-                        <span> <a href="https://github.com/oldo7/PointCloud-video-viewer" target="_blank">File format specification</a></span>
+                        <span> <a href="https://github.com/oldo7/PointCloud-video-viewer?tab=readme-ov-file#file-format-specification" target="_blank">File format specification</a></span>
                         <span> {uploadScreenMessage} </span>
                     </div>
                     <div className="upload-cancel-button">

@@ -2,27 +2,21 @@
 
 This application allows the user to view pointcloud data from a perspective given by a set of rotations and positions of the camera. The user can also use a video as a background for the pointcloud animation. It was developed to visualize data from a LIDAR scanner placed on a moving train. The user can modify the color of the points, filter them based on intensity or adjust camera rotation.
 
-## Available Scripts
+## How to run
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. In the root project directory (where this README is located), run `npm install`. This will download all project dependencies into the **node_modules** folder.
+2. Due to a problem with the OpenCV javascript library, it may be necessary to append the following to line 313 in **node_modules/react-scripts/config/webpack.config.js**:
+```
+fallback: {
+        fs: false,
+        path: false,
+        crypto: false
+      },
+```
+3. Run the application on a local development server or build the application for production.
+    - In order to run the application on a local development server, run `npm run start` in the root project directory. This will run the application in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    - In order to build the app for production, run `npm run build`. This command will build the app to the `build` folder. If the application will be running in a subdirectory (for example **http://example.com/subdirectory/** instead of **http://example.com**), append the following line to **package.json** before building the app:
+    ``"homepage":"subdirectory/",``, where **subdirectory** is the name of your subdirectory.
 
 ## How to use
 By default, the application shows pre-loaded data to showcase it's functionality. You can upload your data using the "Upload files" button. You should then set the correct animation FPS, to match the speed of the video. Animation FPS determines, how many times per second will the camera move according to the provided rotation and position values. Use the controls on the bottom of the screen to control both the video and pointcloud animation. You can use any functions in the right panel during playback. Each function contains a hint explaining the individual inputs further.
