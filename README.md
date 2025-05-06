@@ -4,6 +4,9 @@ This application allows the user to view pointcloud data from a perspective give
 
 ## How to run
 
+You can run the current version of the application at [https://ondrejklima.cloud/xnemce08/](https://ondrejklima.cloud/xnemce08/) (Username: `point`, Password: `cloud`). Alternatively, you can use the source files to run on a local development server or build for production by following these steps:
+
+
 1. In the root project directory (where this README is located), run `npm install`. This will download all project dependencies into the **node_modules** folder.
 2. Due to a problem with the OpenCV javascript library, it may be necessary to append the following to line 313 in **node_modules/react-scripts/config/webpack.config.js**:
 ```
