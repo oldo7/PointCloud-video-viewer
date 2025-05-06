@@ -1,3 +1,6 @@
+// Autor: Oliver Nemček
+// Komponent ovládania kamery
+
 import { useEffect, useState } from "react";
 import { useThree } from "@react-three/fiber";
 import { cos, matrix, multiply, sin, min } from 'mathjs'

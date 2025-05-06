@@ -1,3 +1,6 @@
+// Autor: Oliver Nemček
+// Koreňový komponent
+
 import { useEffect, useState, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import ReactPlayer from 'react-player'

@@ -1,3 +1,6 @@
+// Autor: Oliver Nemček
+// Komponent ovládania 3D bodov
+
 import { useEffect, useState } from "react";
 import * as THREE from "three";
 import { useThree } from "@react-three/fiber";

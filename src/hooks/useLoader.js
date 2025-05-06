@@ -1,3 +1,5 @@
+// Autor: Oliver Nemček
+
 import { useEffect, useState } from "react";
 import { load } from "@loaders.gl/core";
 
